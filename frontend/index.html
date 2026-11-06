@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de tareas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="intro">
+      <p class="eyebrow">FULL-STACK CON DOCKER</p>
+      <h1>Lista de tareas</h1>
+      <p class="subtitle">Una aplicacion sencilla con frontend, API REST y PostgreSQL.</p>
+    </section>
+
+    <section class="panel">
+      <form id="task-form">
+        <input id="task-title" type="text" maxlength="200" placeholder="Que necesitas hacer?" required>
+        <button type="submit">Agregar tarea</button>
+      </form>
+      <p id="message" class="message" aria-live="polite"></p>
+      <ul id="task-list"></ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
